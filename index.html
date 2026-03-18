@@ -1,51 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mukesh Jayswal Official Website</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5 rounded" src="mukesh.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Mukesh jayswal</h1>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Software engineer | Computer engineer</p>
-                <nav>
-                    <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/mukesh.jayswal.9279/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://github.com/jayswal231"><i class="fab fa-github"></i></a>
-                </nav>
-              
-               
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mukesh Prasad Jayswal — AI Engineer specializing in Computer Vision, Deep Learning, LLM/RAG applications, and Django APIs. Based in Lalitpur, Nepal." />
+  <meta name="author" content="Mukesh Prasad Jayswal" />
+  <title>Mukesh Prasad Jayswal — AI Engineer</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MJ<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:0.5rem;">Hire Me</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+          <h1 class="hero-name">Hi, I'm <span class="accent">Mukesh<br>Jayswal</span></h1>
+          <p class="hero-role" id="typedRole"></p>
+          <p class="hero-desc">
+            AI Engineer with strong Python experience, specializing in computer vision,
+            deep learning, and LLM-based applications. Skilled in fine-tuning models,
+            building smart APIs, and creating practical AI solutions that work in the real world.
+          </p>
+          <div class="hero-actions">
+            <a href="portfolio.html" class="btn btn-primary">
+              <i class="fas fa-robot"></i> View My Projects
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Say Hello
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Years Exp.</div>
             </div>
-        </header>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; 2024 mukesh jayswal</small></div>
+            <div class="stat">
+              <div class="stat-num">8+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Certs</div>
+            </div>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <div class="hero-image-wrap">
+          <div class="hero-img-ring">
+            <img src="assets/img/mukesh.jpg" alt="Mukesh Prasad Jayswal — AI Engineer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS STRIP ===== -->
+  <div class="skills-strip">
+    <div class="skills-strip-inner" id="skillsMarquee"></div>
+  </div>
+
+  <!-- ===== WHAT I DO ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Services & Expertise</h2>
+      <p class="section-desc">From AI model development to production-grade APIs — I build smart, scalable systems end to end.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-eye"></i></div>
+          <h3>Computer Vision</h3>
+          <p>Real-time image/video analysis using YOLO, CNNs, and OpenCV. Posture detection, anomaly detection, facial expression recognition, and object tracking.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-brain"></i></div>
+          <h3>LLM & RAG Applications</h3>
+          <p>Building context-aware chatbots and AI assistants using RAG pipelines with FAISS, vector embeddings, and OpenAI APIs for real-world knowledge retrieval.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Anomaly Detection & ML</h3>
+          <p>Developing ML systems for vibration-based machine health monitoring, anomaly detection using Isolation Forest, Autoencoders, and time-series analysis.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h3>Django & REST APIs</h3>
+          <p>Designing scalable web applications and RESTful APIs using Django REST Framework with authentication, role-based access, and database management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SNIPPET ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="about-snippet reveal">
+        <div>
+          <p class="section-label">About Me</p>
+          <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Passionate about AI that works in the real world</h2>
+          <p>I'm an AI Engineer currently at <strong style="color:var(--clr-white);">Techkey Technology, Lalitpur</strong>, working on vibration-based machine health analysis, YOLO pose models, and anomaly detection. Previously, I worked as a Software Engineer at Chulo Solutions and Django Developer at Mediaholic Nepal.</p>
+          <p>I hold a Bachelor's in Computer Engineering from Pokhara University (scholarship recipient) and certifications from IBM in Python for Data Science and SQL. I'm passionate about clean code, continuous learning, and delivering impactful AI features.</p>
+          <a href="about.html" class="btn btn-outline" style="margin-top:1rem;">
+            More About Me <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Full Name</div>
+            <div class="info-value">Mukesh Prasad Jayswal</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Location</div>
+            <div class="info-value">Kupondole, Lalitpur</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Current Role</div>
+            <div class="info-value">AI Engineer</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Status</div>
+            <div class="info-value" style="color:var(--clr-accent);">&#x25CF; Available</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">GitHub</div>
+            <div class="info-value"><a href="https://github.com/jayswal231" target="_blank" rel="noopener" style="color:var(--clr-accent);">jayswal231</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Email</div>
+            <div class="info-value"><a href="mailto:mukesh18jayswal@gmail.com" style="color:var(--clr-accent);">mukesh18jayswal@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">MJ<span>.</span></span>
+          <p>AI Engineer specializing in Computer Vision, Deep Learning & RAG applications. Based in Lalitpur, Nepal.</p>
+          <div class="social-links-row" style="margin-top:1.25rem;">
+            <a href="https://github.com/jayswal231" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/mukesh.jayswal.9279/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="mailto:mukesh18jayswal@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/jayswal231" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.facebook.com/mukesh.jayswal.9279/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="mailto:mukesh18jayswal@gmail.com">mukesh18jayswal@gmail.com</a></li>
+            <li><a href="tel:+9779811237231">+977 9811237231</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mukesh Prasad Jayswal. All rights reserved.</p>
+        <p style="color:var(--clr-text-muted);font-size:0.8rem;">Made with <span style="color:#e11d48;">&#9829;</span> in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

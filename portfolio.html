@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mukesh Prasad Jayswal — AI Engineer. Projects: Hospital AI Assistant (RAG), Vibration Anomaly Detection, Facial Expression Recognition, Cattle YOLO, and more." />
+  <meta name="author" content="Mukesh Prasad Jayswal" />
+  <title>Portfolio — Mukesh Prasad Jayswal</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MJ<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:0.5rem;">Hire Me</a>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-label">My Work</span>
+      <h1 class="section-title">Portfolio</h1>
+      <p class="section-desc">Real projects spanning AI/ML, computer vision, LLM applications, and full-stack web development.</p>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="vision">Computer Vision</button>
+        <button class="filter-btn" data-filter="backend">Backend / Django</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- ─── AI PROJECTS ─── -->
+
+        <!-- 1. Hospital AI Assistant -->
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1a2a3f 100%);">
+            <i class="fas fa-hospital-user" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">AI · LLM · RAG Pipeline</div>
+            <h3 class="project-title">Hospital AI Assistant (RAG + FAISS)</h3>
+            <p class="project-desc">Built a context-aware RAG chatbot for hospital queries using FAISS for vector similarity search. Implemented text chunking, sentence embeddings, and context-aware responses with the OpenAI API.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">RAG</span>
+              <span class="tag">FAISS</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Embeddings</span>
+              <span class="tag">Vector DB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Vibration Analysis & Anomaly Detection -->
+        <div class="project-card reveal reveal-delay-1" data-category="ai">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1f1a2e 100%);">
+            <i class="fas fa-wave-square" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">AI · Anomaly Detection · ML</div>
+            <h3 class="project-title">Vibration Analysis & Anomaly Detection</h3>
+            <p class="project-desc">Developed an anomaly detection system for machine vibration data using Isolation Forest and Autoencoder models. Detects abnormal machine behavior and identifies early failure patterns for predictive maintenance.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Isolation Forest</span>
+              <span class="tag">Autoencoder</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Facial Expression Recognition -->
+        <div class="project-card reveal reveal-delay-2" data-category="ai vision">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1a2a1a 100%);">
+            <i class="fas fa-smile" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Computer Vision · CNN · Real-time</div>
+            <h3 class="project-title">Facial Expression Recognition</h3>
+            <p class="project-desc">Created a real-time facial expression classifier using CNN models and OpenCV. Detects emotions — happy, sad, angry, neutral and more — from a live camera feed with high accuracy.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CNN</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Real-time</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Cattle Monitoring System -->
+        <div class="project-card reveal" data-category="ai vision">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1a2215 100%);">
+            <i class="fas fa-paw" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Computer Vision · YOLO · AI</div>
+            <h3 class="project-title">Cattle Monitoring System</h3>
+            <p class="project-desc">Built an AI system for cattle monitoring — detecting posture and behavior using a fine-tuned YOLO-Pose model. Enables automated livestock health insights by classifying animal postures from video streams.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">YOLO-Pose</span>
+              <span class="tag">Fine-tuning</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── BACKEND / WEB PROJECTS ─── -->
+
+        <!-- 5. mailScheduler -->
+        <div class="project-card reveal reveal-delay-1" data-category="backend">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);">
+            <i class="fas fa-envelope-open-text" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Backend · Celery · RabbitMQ</div>
+            <h3 class="project-title">mailScheduler</h3>
+            <p class="project-desc">Django-based email scheduling app with user authentication. Users schedule emails with subject and message. Celery handles background execution and RabbitMQ serves as the message broker.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Celery</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">Authentication</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Chat System -->
+        <div class="project-card reveal reveal-delay-2" data-category="backend">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1a2a1a 100%);">
+            <i class="fas fa-comments" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Real-time · WebSocket · Django</div>
+            <h3 class="project-title">Simple Chat System</h3>
+            <p class="project-desc">Real-time group chat where multiple users connect and chat simultaneously. Messages are persisted on the server. Built with WebSocket-based real-time communication using Django Channels.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Django Channels</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Inventory Bill Management -->
+        <div class="project-card reveal" data-category="backend">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#1e2a3f 100%);">
+            <i class="fas fa-file-invoice-dollar" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Full-Stack · Django REST API</div>
+            <h3 class="project-title">Inventory Bill Management</h3>
+            <p class="project-desc">Comprehensive inventory and billing system with product CRUD, bill calculation, product categories, and filtering — built with Django REST API and PostgreSQL.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django REST</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Bill Calculation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Online Food Ordering -->
+        <div class="project-card reveal reveal-delay-1" data-category="backend">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#0f172a 0%,#2a1a0f 100%);">
+            <i class="fas fa-utensils" style="font-size:3rem;color:var(--clr-accent);"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Full-Stack · Django · E-Commerce</div>
+            <h3 class="project-title">Online Food Ordering</h3>
+            <p class="project-desc">Full-featured food ordering platform with home page, food posts, food categories, shopping cart, and payment integration — built with function-based Django views.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Cart & Payment</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jayswal231" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certifications & Achievements ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <p class="section-label reveal">Recognition</p>
+      <h2 class="section-title reveal">Certifications & Achievements</h2>
+      <div class="services-grid" style="margin-top:2rem;">
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background:rgba(251,191,36,0.1);color:#fbbf24;"><i class="fas fa-award"></i></div>
+          <h3>Scholarship — Computer Engineering</h3>
+          <p>Awarded a scholarship for Bachelor in Computer Engineering at Everest Engineering College, Pokhara University, Lalitpur.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon" style="background:rgba(99,102,241,0.1);color:#a5b4fc;"><i class="fas fa-building"></i></div>
+          <h3>AI Internship — InfoDevelopers Pvt. Ltd.</h3>
+          <p>Completed AI Internship at InfoDevelopers Pvt. Ltd., gaining hands-on experience in real-world AI applications and development workflows.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-certificate"></i></div>
+          <h3>IBM — Python for Data Science</h3>
+          <p>Certified by IBM in Python for Data Science covering NumPy, Pandas, Matplotlib, and data analysis pipelines.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>IBM — SQL & Relational Databases</h3>
+          <p>Certified by IBM in SQL and Relational Databases covering data modeling, complex queries, joins, and database management.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;">
+    <div class="container text-center">
+      <div class="about-snippet reveal" style="display:block;text-align:center;max-width:600px;margin:0 auto;padding:3rem 2.5rem;">
+        <p class="section-label">Have a project in mind?</p>
+        <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">Let's build something great together</h2>
+        <p style="color:var(--clr-text-muted);margin-bottom:2rem;">I'm always open to discussing AI projects, web applications, and new opportunities.</p>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">MJ<span>.</span></span>
+          <p>AI Engineer specializing in Computer Vision, Deep Learning & RAG applications. Based in Lalitpur, Nepal.</p>
+          <div class="social-links-row" style="margin-top:1.25rem;">
+            <a href="https://github.com/jayswal231" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/mukesh.jayswal.9279/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="mailto:mukesh18jayswal@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/jayswal231" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.facebook.com/mukesh.jayswal.9279/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="mailto:mukesh18jayswal@gmail.com">mukesh18jayswal@gmail.com</a></li>
+            <li><a href="tel:+9779811237231">+977 9811237231</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mukesh Prasad Jayswal. All rights reserved.</p>
+        <p style="color:var(--clr-text-muted);font-size:0.8rem;">Made with <span style="color:#e11d48;">&#9829;</span> in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
